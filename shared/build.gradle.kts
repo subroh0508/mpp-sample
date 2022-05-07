@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    kotlin("plugin.serialization")
 }
 
 version = "1.0"
@@ -28,6 +29,8 @@ kotlin {
                 implementation(Libraries.Serialization.core)
                 implementation(Libraries.Coroutine.core)
                 implementation(Libraries.Ktor.Client.core)
+                implementation(Libraries.Ktor.Client.contentNegotiation)
+                implementation(Libraries.Ktor.Client.logging)
                 implementation(Libraries.Ktor.Serialization.core)
                 implementation(Libraries.Koin.core)
             }
@@ -41,6 +44,8 @@ kotlin {
             dependencies {
                 implementation(Libraries.Coroutine.android)
                 implementation(Libraries.Ktor.Client.okHttp)
+                implementation(Libraries.Okhttp3.client)
+                implementation(Libraries.Okhttp3.loggingIntercerptor)
                 implementation(Libraries.Koin.android)
             }
         }

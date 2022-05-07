@@ -29,11 +29,20 @@ object Libraries {
             const val core = "io.ktor:ktor-client-core:$version"
             const val okHttp = "io.ktor:ktor-client-okhttp:$version"
             const val darwin = "io.ktor:ktor-client-darwin:$version"
+            const val contentNegotiation = "io.ktor:ktor-client-content-negotiation:$version"
+            const val logging = "io.ktor:ktor-client-logging:$version"
         }
 
         object Serialization {
             const val core = "io.ktor:ktor-serialization-kotlinx-json:$version"
         }
+    }
+
+    object Okhttp3 {
+        private const val version = "4.9.3"
+
+        const val client = "com.squareup.okhttp3:okhttp:$version"
+        const val loggingIntercerptor = "com.squareup.okhttp3:logging-interceptor:$version"
     }
 
     object Koin {
