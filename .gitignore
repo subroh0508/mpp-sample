@@ -9,3 +9,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcscheme
+/ios/Pods/*
