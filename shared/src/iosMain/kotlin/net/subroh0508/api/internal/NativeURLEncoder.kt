@@ -1,4 +1,4 @@
-package net.subroh0508
+package net.subroh0508.api.internal
 
 import platform.Foundation.NSCharacterSet
 import platform.Foundation.NSString

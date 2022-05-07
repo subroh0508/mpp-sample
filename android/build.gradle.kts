@@ -27,4 +27,5 @@ dependencies {
     implementation(compose.ui)
     implementation(compose.material)
     implementation(compose.uiTooling)
+    implementation(Libraries.Koin.android)
 }

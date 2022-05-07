@@ -24,7 +24,7 @@ internal class IdolsRepositoryImpl(
             WHERE {
               ?s a imas:Idol;
                 schema:name ?name;
-                imas:Title ?title;
+                imas:Brand ?brand;
                 imas:Color ?color;
                 foaf:age ?age;
                 schema:birthPlace ?birthplace;
@@ -37,8 +37,8 @@ internal class IdolsRepositoryImpl(
                 GROUP BY ?s
               }
               FILTER (lang(?name) = 'ja')
-              FILTER (str(?title) != '1st Vision')
-              ${queryStr?.let {"FILTER (regex(?name, '.*$it.*', 'i') || regex(?yomi, '.*$it.*', 'i'))." } ?: ""}
+              FILTER (str(?brand) != '1st Vision')
+              ${queryStr?.let {"FILTER (regex(?name, '.*$it.*', 'i') || regex(?yomi, '.*$it.*', 'i'))" } ?: ""}
               OPTIONAL { ?s imas:alternateNameKana ?tmp }
               OPTIONAL { ?s imas:nameKana ?tmp }
               OPTIONAL { ?s imas:givenNameKana ?tmp }

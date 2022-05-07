@@ -6,7 +6,6 @@ import io.ktor.client.statement.*
 import io.ktor.utils.io.charsets.*
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.json.Json
-import net.subroh0508.URLEncoder
 import net.subroh0508.api.ImasparqlClient
 import net.subroh0508.api.serializer.SparqlResponse
 
