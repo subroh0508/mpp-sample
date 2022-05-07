@@ -22,8 +22,8 @@ android {
 
 dependencies {
     implementation(project(":shared"))
-    implementation("androidx.appcompat:appcompat:1.3.1")
-    implementation("androidx.activity:activity-compose:1.4.0")
+    implementation(Libraries.Jetpack.appCompat)
+    implementation(Libraries.Jetpack.activityCompose)
     implementation(compose.ui)
     implementation(compose.material)
     implementation(compose.uiTooling)
