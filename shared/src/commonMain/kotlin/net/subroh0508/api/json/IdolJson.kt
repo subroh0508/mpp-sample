@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class IdolJson(
-    val id: Map<String, String>,
+    val s: Map<String, String>,
     val name: Map<String, String>,
     val yomi: Map<String, String>,
     val color: Map<String, String>,
