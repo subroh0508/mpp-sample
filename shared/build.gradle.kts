@@ -20,6 +20,12 @@ kotlin {
         }
     }
     
+    js {
+        binaries.executable()
+
+        nodejs()
+    }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -68,6 +74,8 @@ kotlin {
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
         }
+        val jsMain by getting
+        val jsTest by getting
     }
 }
 
